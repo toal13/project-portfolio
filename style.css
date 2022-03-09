@@ -225,10 +225,17 @@ header {
 
 .project-image-group {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s ease;
 }
 
-.featured-projects {
-    padding-top: 40px;
+.project-image {
+    width: 100%;
+    display: inherit;
+    transition: 0.5s ease;
 }
 
 .project-overlay {
@@ -237,32 +244,42 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(1, 61, 182, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: 0.5s ease;
-}
-
-.project-image {
     width: 100%;
-    display: inherit;
+    height: 100%;
 }
 
 .project-name-overlay {
     position: absolute;
-    top: 42%;
-    left: 0;
-    bottom: 0;
-    right: 0;
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-weight: 700;
     font-size: 28px;
-    transition: 0.5s ease;
     text-align: center;
+    top: 42%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease;
+    margin: auto;
+}
+
+.project-image-group:hover .project-image-overlay, .project-image-group:hover .project-name-overlay {
+    background-color: transparent;
+    color: transparent
+}
+
+  .project-overlay:hover {
+    background-color: transparent;
+  } 
+
+.featured-projects {
+    padding-top: 40px;
 }
 
 .project-language-group {
     padding-bottom: 40px;
-
 }
 
 .project-language {
