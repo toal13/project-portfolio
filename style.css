@@ -120,13 +120,10 @@ header {
 }
 
 .profile-picture {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+   object-fit: cover;
     bottom: 0;
     top: 356px;
     left: 171px;
-    border: 2px solid whitesmoke;
     overflow: hidden;
     align-items: flex-end;
     margin-top: 40px;
@@ -230,6 +227,7 @@ header {
     justify-content: center;
     text-align: center;
     transition: 0.5s ease;
+    width: 100%;
 }
 
 .project-image {
