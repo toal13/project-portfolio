@@ -7,6 +7,7 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* -----Global styles----- */
@@ -30,10 +31,6 @@ a {
     display: initial;
 }
 
-.text-decoration-color {
-    text-decoration-color: #FA382F;
-}
-
 /* -----Sections----- */
 
 .section:nth-child(2n) {
@@ -46,19 +43,25 @@ a {
 
 .section-heading {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-size: 1.8rem;
     font-weight: 700;
     color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
 }
 
+
 .section-heading-1 {
-    color: #FA382F;
+    color: #EC994B;
+    font-size: 1.5rem;
 }
 
 .heading-block {
-    background-color: #FA382F;
-    padding: 0 5px;
+    background-color: #EC994B;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 1.5rem;
 }
 
 
@@ -66,6 +69,7 @@ a {
 
 header {
     background-image: url(./assets/background.jpg);
+    background-position: center;
     height: 520px;
     background-size: cover;
     /* position: relative; */
@@ -92,7 +96,6 @@ header {
 }
 
 .header-name {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
@@ -104,7 +107,6 @@ header {
 }
 
 .header-title {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 45px;
@@ -112,15 +114,14 @@ header {
 }
 
 .header-sub-title {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 40px;
     color: white;
 }
 
 .profile-picture {
-   object-fit: cover;
+    object-fit: cover;
     bottom: 0;
     top: 356px;
     left: 171px;
@@ -141,18 +142,15 @@ header {
     -webkit-align-items: flex-end;
 }
 
-
 /*----- Intro----- */
 
 .intro-container {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
     font-weight: 400;
     line-height: 29px;
 }
 
 .line {
-    border: 1px solid #FA382F;
+    border: 2px solid #EC994B;
     width: 40px;
     display: inline-block;
     margin-bottom: 4px;
@@ -161,7 +159,7 @@ header {
 .dot {
     height: 10px;
     width: 10px;
-    background-color: #FA382F;
+    background-color: #EC994B;
     border-radius: 50%;
     display: inline-block;
 }
@@ -188,37 +186,48 @@ header {
 }
 
 /* -----Project----- */
-.featured-project {
-    padding: 45px 0 0 0;
+.project {
+    margin-bottom: 20px;
 }
 
-.project {
-    font-family: 'Roboto', sans-serif;
+.featured-project {
+    padding: 45px 0 0;
 }
 
 .project-heading {
     font-weight: 700;
     line-height: 29px;
-    font-size: 17px;
-    color: #FA382F;
+    font-size: 1.3rem;
 }
 
 .project-description {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 29px;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .project-text-group {
     margin-top: 25px;
 }
 
-.project-heading {
-    font-weight: 700;
-    line-height: 29px;
-    font-size: 17px;
+.tag-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
 }
+
+.tag-wrapper p{
+    background-color: #C0D8C0;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 500;
+    padding: 7px;
+    border-radius: 3px;
+    margin: 5px 0 0;
+    height: 30px;
+}
+
 
 .project-image-group {
     position: relative;
@@ -228,6 +237,16 @@ header {
     text-align: center;
     transition: 0.5s ease;
     width: 100%;
+}
+
+.github-logo {
+    font-size: 1.9rem;
+    margin: 4px 0 0 ;
+}
+
+.github-logo:hover {
+    opacity: 65%;
+    transition: 0.3s;
 }
 
 .project-image {
@@ -250,7 +269,6 @@ header {
 
 .project-name-overlay {
     position: absolute;
-    font-family: 'Montserrat', sans-serif;
     color: white;
     font-weight: 700;
     font-size: 28px;
@@ -263,14 +281,15 @@ header {
     margin: auto;
 }
 
-.project-image-group:hover .project-image-overlay, .project-image-group:hover .project-name-overlay {
+.project-image-group:hover .project-image-overlay,
+.project-image-group:hover .project-name-overlay {
     background-color: transparent;
     color: transparent
 }
 
-  .project-overlay:hover {
+.project-overlay:hover {
     background-color: transparent;
-  } 
+}
 
 .featured-projects {
     padding-top: 40px;
@@ -282,7 +301,7 @@ header {
 
 .project-language {
     display: inline-block;
-    background-color: #FDDFE7;
+    background-color: #C0D8C0;
     padding: 2px 4px;
     font-size: 14px;
     margin: 5px 3px 0 0;
@@ -290,12 +309,12 @@ header {
 }
 
 .other-project {
-    font-family: 'Roboto', sans-serif;
     margin-top: 20px;
 }
 
 .other-projects-name {
-    color: #FA382F;
+    color: black;
+    font-size: 1rem;
 }
 
 .other-projects-description {
@@ -305,12 +324,12 @@ header {
 }
 
 .color-red {
-    color: #FA382F;
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .color-only {
-    color: #FA382F;
+    color: #EC994B;
     font-weight: normal;
 }
 
@@ -319,15 +338,8 @@ header {
 }
 
 .project-language-cards {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin-bottom: 15px;
-}
-
-/* ----My thoughts----- */
-.my-thoughts {
-    padding-top: 40px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .my-thoughts-image {
@@ -335,24 +347,7 @@ header {
     margin-bottom: 40px;
 }
 
-.article-dates {
-    color: #FA382F;
-}
-
-.article-heading {
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 30px;
-}
-
-.article-description {
-    font-size: 17px;
-    line-height: 29px;
-    font-weight: 400;
-}
-
 .other-options {
-    font-family: 'Roboto', sans-serif;
     text-decoration: underline;
     padding: 20px 0;
     font-size: 18px;
@@ -360,7 +355,7 @@ header {
 }
 
 .color-font {
-    color: #FA382F;
+    color: ;
 }
 
 .underline {
@@ -375,7 +370,6 @@ header {
 .skills-container {
     padding-top: 45px;
     font-size: 17px;
-    font-family: 'Roboto', sans-serif;
     line-height: 30px;
     text-align: center;
     display: grid;
@@ -392,22 +386,21 @@ header {
     text-align: center;
 }
 
+.about-code {
+    margin-bottom: 20px;
+}
+
 /* Footer */
 
 .footer-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    border: 1px solid #FA382F;
-}
-
-.icon-name {
-    font-size: 11px;
-    color: #FA382F;
+    border: 3px solid white;
 }
 
 footer {
-    background-color: #072BCE;
+    background-color: #576F72;
     color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -415,6 +408,21 @@ footer {
 
 .contact-container {
     margin-bottom: 35px;
+}
+
+.social-media-icon-footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.mail {
+    color: white;
+}
+
+.mail:hover {
+    opacity: 75%;
+    text-decoration: underline;
 }
 
 /* ===============
@@ -442,6 +450,7 @@ Tablet
     .heading-block {
         padding: 0 10px;
     }
+
     /* Header */
     .social-icon {
         width: 60px;
@@ -454,18 +463,28 @@ Tablet
         margin-top: 75px;
         margin-bottom: 0px;
     }
-  
+
     .header-name {
         font-size: 18px;
         line-height: 30px;
     }
+
     .header-title {
         font-size: 50px;
         line-height: 55px;
     }
+
     .header-sub-title {
         font-size: 18px;
         line-height: 50px;
+    }
+
+    .other-projects-name {
+        font-size: 1.5rem;
+    }
+
+    .other-projects-description {
+        font-size: 1.3rem;
     }
 
     /* tech */
@@ -509,19 +528,16 @@ Tablet
 
     /* Fore More */
     .footer-icon {
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
-        border: 1px solid #FA382F;
+        border: 1px solid white;
     }
 
     .social-media-icon-footer {
-        padding-top: 45px;
-        width: 500px;
-        padding-top: 80px;
-        width: 500px;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
     }
 }
 
@@ -536,4 +552,20 @@ Desktop
         width: 850px;
     }
 
+    .other-projects-name {
+        color: black;
+        font-size: 2rem;
+    }
+
+    .heading-block {
+    font-size: 1.8rem;
+    }
+
+    .other-projects-name {
+        font-size: 1.2rem;
+    }
+    
+    .other-projects-description {
+        font-size: 1.3rem;
+    }
 }
